@@ -1,4 +1,4 @@
-/* General */
+/* GENERAL */
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@ p {
     color:rgb(16, 83, 184);
 }
 
-/* Desktop Nav */
+/* DESKTOP NAV MENU */
 
 nav, .nav-links {
     display: flex;
@@ -56,7 +56,7 @@ a:hover {
     cursor: default;
 }
 
-/* Hambuger Menu */
+/* HAMBURGER MENU */
 #hamburger-nav {
     display: none; /*desktop view - won't show up*/
 }
@@ -135,14 +135,17 @@ a:hover {
     transform: none;
 }
 
-/* Sections */
-
+/* SECTIONS GENERAL */
 section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 4vh;
-    height: 96vh;
+    height: 70vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    position: relative;
 }
 
 .title {
@@ -150,36 +153,89 @@ section {
     text-align: center;
 }
 
-/* About Section */
-
-#about {
-    position: relative;
+.icon {
+    height: 2rem;
+    cursor: pointer;
 }
 
+/* BUTTONS */
+.btn {
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+/* INTRO SECTION */
+.intro-subtitle-1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.intro-subtitle-2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.intro-btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.intro-socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* ABOUT SECTION */
 .profile-pic {
     border-radius: 2rem;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    max-width: 400px;
 }
 
 .about-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 2rem;
+    height: 80%;
 }
 
-/* Skills Section */
-.skills-box-1 {
-    border: blue;
+/* SKILLS SECTION */
+.index-section-container {
+    margin-top: 2rem;
+}
+
+.index-box {
+    border: blue 0.1rem solid;
     border-radius: 2rem;
+    background-color: aqua;
+    padding: 1.5rem;
+    flex: 1;
+    text-wrap: wrap;
 }
 
-.skills-row-1 {
+.index-row {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 2rem;
-    margin-top: 2rem;
+}
+
+.index-subtitle {
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* CONTACT SECTION */
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
 }

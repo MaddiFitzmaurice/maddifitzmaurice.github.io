@@ -12,7 +12,7 @@
             <div class="logo">Maddi Fitzmaurice</div>
             <div>
                 <ul class="nav-links">
-                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="games.html">Games</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="index.html#blurb">Resume</a></li>
@@ -37,18 +37,52 @@
                 </div>
             </div>
         </nav>
-        <section id="blurb">
-            <div class="">
-
+        <section id="intro">
+            <div class="index-section-container">
+                <p class="intro-subtitle-1">Hi there! I'm</p>
+                <h1 class="title">Maddi Fitzmaurice</h1>
+                <p class="intro-subtitle-2">A Melbourne-based developer for games and software</p>
+                <div class="intro-btns-container">
+                    <button 
+                        class="btn"
+                        onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')">
+                        Download Resume
+                    </btn>
+                    <button 
+                        class="btn" 
+                        onclick="location.href='./index.html#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div class="intro-socials-container">
+                    <img
+                        src="./assets/linkedin-icon.svg" 
+                        alt="My LinkedIn profile" 
+                        class="icon" 
+                        onclick="location.href='https://www.linkedin.com/in/maddifitzmaurice/'"
+                    />
+                    <img
+                        src="./assets/github-icon.svg" 
+                        alt="My Github profile" 
+                        class="icon" 
+                        onclick="location.href='https://github.com/MaddiFitzmaurice'"
+                    />
+                    <img
+                        src="./assets/itch-io-icon.svg" 
+                        alt="My Itch.io profile" 
+                        class="icon" 
+                        onclick="location.href='https://madfizz.itch.io/'"
+                    />
+                </div>
             </div>
         </section>
         <section id="skills">
             <h1 class="title">Skills</h1>
-            <div class="skills-container">
-                <div class="skills-row-1">
-                    <div class="skills-box-1">
-                        <h2 class="skills-subtitle">Languages</h2>
-                        <div class="skills-article-container">
+            <div class="index-section-container">
+                <div class="index-row">
+                    <div class="index-box">
+                        <h2 class="index-subtitle">Languages</h2>
+                        <div class="index-article-container">
                             <article>
                                 <h3>HTML</h3>
                                 <p>Basic</p>
@@ -65,13 +99,29 @@
                                 <h3>C#</h3>
                                 <p>Intermediate</p>
                             </article>
+                            <article>
+                                <h3>C++</h3>
+                                <p>Basic</p>
+                            </article>
+                            <article>
+                                <h3>Python</h3>
+                                <p>Basic</p>
+                            </article>
                         </div>
                     </div>
-                    <div class="skills-box-2">
-                        <h2 class="skills-subtitle">Frameworks/Libraries</h2>
-                        <div class="skills-article-container">
+                    <div class="index-box">
+                        <h2 class="index-subtitle">Frameworks/Libraries<br>/Engines</h2>
+                        <div class="index-article-container">
                             <article>
-                                <h3>.Net</h3>
+                                <h3>.NET</h3>
+                                <p>Basic</p>
+                            </article>
+                            <article>
+                                <h3>Unity Engine</h3>
+                                <p>Intermediate</p>
+                            </article>
+                            <article>
+                                <h3>Unreal Engine</h3>
                                 <p>Basic</p>
                             </article>
                             <article>
@@ -80,33 +130,143 @@
                             </article>
                         </div>
                     </div>
+                    <div class="index-box">
+                        <h2 class="index-subtitle">Tools</h2>
+                        <div class="index-article-container">
+                            <article>
+                                <h3>Visual Studio</h3>
+                                <p>Intermediate</p>
+                            </article>
+                            <article>
+                                <h3>VSCode</h3>
+                                <p>Intermediate</p>
+                            </article>
+                            <article>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </article>
+                            <article>
+                                <h3>Docker</h3>
+                                <p>Basic</p>
+                            </article>
+                            <article>
+                                <h3>Jenkins</h3>
+                                <p>Basic</p>
+                            </article>
+                            <article>
+                                <h3>Maya</h3>
+                                <p>Basic</p>
+                            </article>
+                            <article>
+                                <h3>Audacity</h3>
+                                <p>Basic</p>
+                            </article>
+                            <article>
+                                <h3>DaVinci Resolve</h3>
+                                <p>Basic</p>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="education">
-
+            <h1 class="title">Education</h1>
+            <div class="index-section-container">
+                <div class="index-row">
+                    <div class="index-box">
+                        <h2 class="index-subtitle">Swinburne University</h2>
+                        <div class="index-article-container">
+                            <article>
+                                <h3>Bachelor of Computer Science</h3>
+                                <p>Major in Games Programming</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="index-box">
+                        <h2 class="index-subtitle">University of New South Wales</h2>
+                        <div class="index-article-container">
+                            <article>
+                                <h3>Bachelor of Media</h3>
+                                <p>Major in Screen and Sound Production</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="index-box">
+                        <h2 class="index-subtitle">HarvardX</h2>
+                        <div class="index-article-container">
+                            <article>
+                                <h3>Certificate</h3>
+                                <p>CS50x: Introduction to Computer Science</p>
+                            </article>
+                            <article>
+                                <h3>Certificate</h3>
+                                <p>CS50g: Introduction to Games Development</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="about">
-            <div class="about-container">
-                <div class="profile-pic-container">
-                    <img
-                        src="./assets/Maddi_Headshot_Edited.jpg"
-                        alt="Profile Picture"
-                        class="profile-pic"
-                    />
-                </div>
-                <div class="text-container">
-                    <p>
-                        Hi! I'm Maddi Fitzmaurice, a Melbourne-based developer with an interest in games and
-                        software that's currently looking for work.
-                        <br><br>
-                        In my downtime, I often enjoy weight-lifting, reading, playing games, and watching 
-                        all kinds of movies, animation, and TV.
-                    </p>
+            <h1 class="title">About Me</h1>
+            <div class="index-section-container">
+                <div class="about-container">
+                    <div class="profile-pic-container">
+                        <img
+                            src="./assets/Maddi_Headshot_Edited.jpg"
+                            alt="Profile Picture"
+                            class="profile-pic"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Hi! I'm Maddi Fitzmaurice, a Melbourne-based developer with an interest in games and
+                            software that's currently looking for work.
+                            <br><br>
+                            In my downtime, I often enjoy weight-lifting, reading, playing games, and watching 
+                            all kinds of movies, animation, and TV.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="contact">
+            <h1 class="title">Contact Me</h1>
+            <div class="index-section-container">
+                <div class="index-row">
+                    <div class="index-box contact-box">
+                        <img
+                            src="./assets/email-icon.svg"
+                            alt="email icon"
+                            class="icon contact-icon"
+                        />
+                        <p><a href="mailto:maddifitzmaurice.gmail.com">MaddiFitzmaurice@gmail.com</a></p>
+                    </div>
+                    <div class="index-box contact-box">
+                        <img
+                            src="./assets/linkedin-icon.svg"
+                            alt="linkedin icon"
+                            class="icon contact-icon"
+                        />
+                        <p><a href="https://www.linkedin.com/in/maddifitzmaurice/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#blurb">Resume</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Maddi Fitzmaurice. All Rights Reserved.</p>
+    </footer>
 </html>
