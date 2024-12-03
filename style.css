@@ -153,6 +153,11 @@ section {
     text-align: center;
 }
 
+.subtitle {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
 .icon {
     height: 2rem;
     cursor: pointer;
@@ -166,14 +171,9 @@ section {
 }
 
 /* INTRO SECTION */
-.intro-subtitle-1 {
+.intro-subtitle {
     text-align: center;
     font-weight: 600;
-}
-
-.intro-subtitle-2 {
-    font-size: 1.75rem;
-    text-align: center;
 }
 
 .intro-btns-container {
