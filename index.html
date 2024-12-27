@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Maddi Fitzmaurice</title>
+        <title>Maddi Fitzmaurice Portfolio</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="mediaqueries.css"/>
     </head>
     <body>
         <nav id="desktop-nav">
-            <div class="logo">Maddi Fitzmaurice</div>
+            <div class="nav-logo">Maddi Fitzmaurice</div>
             <div>
                 <ul class="nav-links">
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="games.html">Games</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="index.html#intro">Resume</a></li>
+                    <li><a href="index.html#hero">Resume</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
@@ -28,21 +28,21 @@
                     <span></span>
                     <span></span>
                 </div>
-                <div class="menu-links">
+                <div class="hamburger-menu-links">
                     <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="games.html" onclick="toggleMenu()">Games</a></li>
                     <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="index.html#intro" onclick="toggleMenu()">Resume</a></li>
+                    <li><a href="index.html#hero" onclick="toggleMenu()">Resume</a></li>
                     <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
                 </div>
             </div>
         </nav>
-        <section id="intro" class="intro-image">
-            <div class="index-section-container">
-                <p class="intro-subtitle">Hi there! I'm</p>
-                <h1 class="title intro-title">Maddi Fitzmaurice</h1>
-                <p class="subtitle">A Melbourne-based developer for games and software</p>
-                <div class="intro-btns-container">
+        <section id="hero" class="bg-image hero-bg-image">
+            <div class="index-section index-section-container">
+                <p class="index-title hero-subtitle">Hi there! I'm</p>
+                <h1 class="index-title hero-title">Maddi Fitzmaurice</h1>
+                <p class="index-title hero-subtitle">A Melbourne-based developer for games and software</p>
+                <div class="hero-btns-container">
                     <button 
                         class="btn"
                         onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')">
@@ -54,7 +54,7 @@
                         Contact Me
                     </button>
                 </div>
-                <div class="intro-socials-container">
+                <div class="hero-socials-container">
                     <svg 
                         xmlns="http://www.w3.org/2000/svg"
                         onclick="location.href='https://www.linkedin.com/in/maddifitzmaurice/'" 
@@ -80,18 +80,18 @@
             </div>
         </section>
         <section id="skills">
-            <div class="title-container">
+            <div class="index-section index-section-title-container">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     class="icon"
                     viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/>
                 </svg>
-                <h1 class="title">Skills</h1>
+                <h1 class="index-title">Skills</h1>
             </div>
-            <div class="index-section-container">
+            <div class="index-section index-section-container">
                 <div class="index-row">
                     <div class="index-box">
-                        <h2 class="index-subtitle">Languages</h2>
+                        <h2 class="index-title">Languages</h2>
                         <div class="index-article-container">
                             <article>
                                 <h3>HTML</h3>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="index-box">
-                        <h2 class="index-subtitle">Frameworks/Libraries<br>/Engines</h2>
+                        <h2 class="index-title">Frameworks/Libraries<br>/Engines</h2>
                         <div class="index-article-container">
                             <article>
                                 <h3>.NET</h3>
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                     <div class="index-box">
-                        <h2 class="index-subtitle">Tools</h2>
+                        <h2 class="index-title">Tools</h2>
                         <div class="index-article-container">
                             <article>
                                 <h3>Visual Studio</h3>
@@ -172,61 +172,16 @@
                 </div>
             </div>
         </section>
-        <section id="education">
-            <div class="title-container">
-                <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    class="icon"
-                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/>
-                </svg>
-                <h1 class="title">Education</h1>
-            </div>
-            <div class="index-section-container">
-                <div class="index-row">
-                    <div class="index-box">
-                        <h2 class="index-subtitle">Swinburne University</h2>
-                        <div class="index-article-container">
-                            <article>
-                                <h3>Bachelor of Computer Science</h3>
-                                <p>Major in Games Programming</p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="index-box">
-                        <h2 class="index-subtitle">University of New South Wales</h2>
-                        <div class="index-article-container">
-                            <article>
-                                <h3>Bachelor of Media</h3>
-                                <p>Major in Screen and Sound Production</p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="index-box">
-                        <h2 class="index-subtitle">HarvardX</h2>
-                        <div class="index-article-container">
-                            <article>
-                                <h3>Certificate</h3>
-                                <p>CS50x: Introduction to Computer Science</p>
-                            </article>
-                            <article>
-                                <h3>Certificate</h3>
-                                <p>CS50g: Introduction to Games Development</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="title-container">
+        <section id="about" class="bg-image bg-1-image">
+            <div class="index-section index-section-title-container">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     class="icon"
                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
                 </svg>
-                <h1 class="title">About Me</h1>
+                <h1 class="index-title">About Me</h1>
             </div>
-            <div class="index-section-container">
+            <div class="index-section index-section-container">
                 <div class="about-container">
                     <div class="profile-pic-container">
                         <img
@@ -247,16 +202,61 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <div class="title-container">
+        <section id="education">
+            <div class="index-section index-section-title-container">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="icon"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/>
+                </svg>
+                <h1 class="index-title">Education</h1>
+            </div>
+            <div class="index-section index-section-container">
+                <div class="index-row">
+                    <div class="index-box">
+                        <h2 class="index-title">Swinburne University</h2>
+                        <div class="index-article-container">
+                            <article>
+                                <h3>Bachelor of Computer Science</h3>
+                                <p>Major in Games Programming</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="index-box">
+                        <h2 class="index-title">HarvardX</h2>
+                        <div class="index-article-container">
+                            <article>
+                                <h3>Certificate</h3>
+                                <p>CS50x: Introduction to Computer Science</p>
+                            </article>
+                            <article>
+                                <h3>Certificate</h3>
+                                <p>CS50g: Introduction to Games Development</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="index-box">
+                        <h2 class="index-title">University of New South Wales</h2>
+                        <div class="index-article-container">
+                            <article>
+                                <h3>Bachelor of Media</h3>
+                                <p>Major in Screen and Sound Production</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="bg-image bg-2-image">
+            <div class="index-section index-section-title-container">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     class="icon"
                     viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
                 </svg>
-                <h1 class="title">Contact Me</h1>
+                <h1 class="index-title">Contact Me</h1>
             </div>
-            <div class="index-section-container">
+            <div class="index-section index-section-container">
                 <div class="index-row">
                     <div class="index-box contact-box">
                         <svg 
@@ -288,7 +288,7 @@
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="games.html">Games</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="index.html#intro">Resume</a></li>
+                    <li><a href="index.html#hero">Resume</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
