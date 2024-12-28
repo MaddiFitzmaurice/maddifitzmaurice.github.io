@@ -25,6 +25,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* FOOTER */
+footer p {
+    color: var(--secondary-colour);
+    text-align: center;
+    margin: 10px;
+}
+
 /* DESKTOP NAV MENU */
 nav, .nav-links {
     display: flex;
@@ -155,18 +162,36 @@ section {
     position: relative;
 }
 
-.bg-image {
-    background-color: var(--primary-colour);
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg-image {    
+    z-index: 0;
 }
 
-.bg-1-image {
+.bg-1-image:before {
     background-image: url(assets/bg-1.png);
 }
 
-.bg-2-image {
+.bg-2-image:before {
     background-image: url(assets/bg-2.png);
+}
+
+.bg-3-image:before {
+    background-image: url(assets/bg-3.png);
+}
+
+.bg-image:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: var(--primary-colour);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-mask-image: linear-gradient(transparent, black, black, transparent);
+    mask-image: linear-gradient(transparent, black, black, transparent);
 }
 
 .icon {
@@ -255,6 +280,7 @@ section {
 
 .index-box h3 {
     color: var(--accent-colour);
+    margin-bottom: 0.5rem;
 }
 
 .index-box p {
@@ -288,10 +314,6 @@ section {
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-}
-
-.hero-bg-image {
-    background-image: url(assets/hero-bg.png);
 }
 
 /* ABOUT SECTION */
