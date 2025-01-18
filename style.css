@@ -1,7 +1,5 @@
-/* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap');
 
 :root {
     --primary-colour: #003566;
@@ -15,9 +13,6 @@
 }
 
 body {
-    font-family: "Play", serif;
-    font-weight: 400;
-    font-style: normal;
     background-color: var(--primary-colour);
 }
 
@@ -50,9 +45,9 @@ nav {
 }
 
 .nav-links a {
-    color:var(--secondary-colour);
+    color:var(--accent-colour);
     text-decoration: none;
-    text-decoration-color: var(--secondary-colour);
+    text-decoration-color: var(--accent-colour);
 }
 
 .nav-links a:hover {
@@ -62,7 +57,7 @@ nav {
     text-decoration-color: var(--accent-colour);
 }
 
-.nav-logo {
+.logo {
     font-size: 2rem;
     color: var(--secondary-colour);
 }
@@ -93,7 +88,7 @@ nav {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: var(--secondary-colour);
+    background-color: var(--accent-colour);
     transition: all 0.3 ease-in-out;
 }
 
@@ -101,7 +96,7 @@ nav {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--accent-colour);
+    background-color: var(--secondary-colour);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -151,6 +146,13 @@ nav {
 }
 
 /* WEBPAGE GENERAL */
+
+h1 {
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 section {
     display: flex;
     justify-content: center;
@@ -208,137 +210,8 @@ section {
     fill:var(--secondary-colour);
 }
 
-.btn {
-    font-weight: 600;
-    padding: 1rem;
-    border-radius: 2rem;
-    background-color: var(--accent-colour);
-    color:var(--secondary-colour);
-    border: var(--secondary-colour) 0.1rem solid;
-}
+/* ABOUT */
 
-.btn:hover {
-    scale: 1.05;
-    cursor: pointer;
-    color: var(--accent-colour);
-    background-color: var(--secondary-colour);
-    border: var(--accent-colour) 0.1rem solid;
-}
-
-/* INDEX GENERAL */
-.index-title {
-    text-align: center;
-}
-
-.index-section {
-    margin: 0 10rem;
-}
-
-.index-section-title-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.index-section-title-container h1 {
-    color: var(--accent-colour);
-    font-size: 3rem;
-}
-
-.index-section-container {
-    margin-top: 2rem;
-}
-
-.index-row {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.index-box {
-    border: var(--accent-colour) 0.1rem solid;
-    border-radius: 2rem;
-    background-color: var(--secondary-colour);
-    padding: 1.5rem;
-    flex: 1;
-    text-wrap: wrap;
-    color: var(--primary-colour);
-}
-
-.index-box article {
-    margin-bottom: 10px;
-}
-
-.index-box h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: var(--accent-colour);
-}
-
-.index-box h3 {
-    color: var(--accent-colour);
-    margin-bottom: 0.5rem;
-}
-
-.index-box p {
-    font-weight: 600;
-}
-
-/* HERO SECTION */
-.hero-title {
-    font-family: "Anta", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--accent-colour);
-    font-size: 5rem;
-}
-
-.hero-subtitle {
-    font-weight: 600;
-    font-size: 1.25rem;
-    color: var(--secondary-colour);
-}
-
-.hero-btns-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.hero-socials-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-/* ABOUT SECTION */
-.profile-pic {
-    border-radius: 2rem;
-    max-width: 400px;
-}
-
-.about-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 4rem;
-    margin-top: 2rem;
-    height: 80%;
-}
-
-/* SKILLS SECTION */
-
-
-/* CONTACT SECTION */
-.contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem;
+.about-pic img {
+    width: 200px;
 }
