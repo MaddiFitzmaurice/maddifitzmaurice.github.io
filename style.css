@@ -1,10 +1,17 @@
+/*  */
+/* GENERAL */
+/*  */
 
 @import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap');
 
 :root {
-    --primary-colour: #003566;
-    --secondary-colour: #A54657;
-    --accent-colour: #F9F9F9;
+    --primary-colour: #FFFFFF;
+    --secondary-colour: #53A9DD;
+    --accent-colour: #000000;
+    --background-colour: #D9D9D9;
+    --text-shadow: 1px 1px #000000;
+    --heading-font: "Play", sans-serif;
+    --body-font: "Gantari", sans-serif;
 }
 
 * {
@@ -13,60 +20,87 @@
 }
 
 body {
-    background-color: var(--primary-colour);
+    background-color: var(--background-colour);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+/*  */
 /* FOOTER */
+/*  */
+
 footer p {
     color: var(--secondary-colour);
     text-align: center;
     margin: 10px;
 }
 
+/*  */
 /* DESKTOP NAV MENU */
-nav, .nav-links {
+/*  */
+
+#desktop-nav {
     display: flex;
-}
-
-nav {
     justify-content: space-around;
-    align-items: center;
-    height: 15vh;
-}
-
-.nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-}
-
-.nav-links a {
-    color:var(--accent-colour);
-    text-decoration: none;
-    text-decoration-color: var(--accent-colour);
-}
-
-.nav-links a:hover {
-    color:var(--accent-colour);
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: var(--accent-colour);
+    align-items: stretch;
+    align-content: center;
+    height: 8vh;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/blue-low-poly.png");
     font-size: 2rem;
-    color: var(--secondary-colour);
+    color: var(--primary-colour);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+    flex-basis: 40%;
+    border: solid var(--accent-colour);
+    border-width: 2px 0px 2px 2px;
 }
 
 .logo:hover {
     cursor: default;
 }
 
+.nav-links {
+    flex-basis: 60%;
+    background-color: var(--primary-colour);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: var(--body-font);
+    border: 2px solid var(--accent-colour);
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 5rem;
+}
+
+.nav-links a {
+    color:var(--accent-colour);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: var(--accent-colour);
+}
+
+.nav-links a:hover {
+    font-weight: bold;
+}
+
+/*  */
 /* HAMBURGER MENU */
+/*  */
+
 #hamburger-nav {
     display: none; /*desktop view - won't show up*/
 }
@@ -162,38 +196,6 @@ section {
     box-sizing: border-box;
     min-height: fit-content;
     position: relative;
-}
-
-.bg-image {    
-    z-index: 0;
-}
-
-.bg-1-image:before {
-    background-image: url(assets/bg-1.png);
-}
-
-.bg-2-image:before {
-    background-image: url(assets/bg-2.png);
-}
-
-.bg-3-image:before {
-    background-image: url(assets/bg-3.png);
-}
-
-.bg-image:before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background-color: var(--primary-colour);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-mask-image: linear-gradient(transparent, black, black, transparent);
-    mask-image: linear-gradient(transparent, black, black, transparent);
 }
 
 .icon {
