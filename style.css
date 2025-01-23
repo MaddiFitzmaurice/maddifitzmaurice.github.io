@@ -31,7 +31,12 @@ html {
 }
 
 /* #endregion */
+
 /* #region REPEATING THEMES */
+.low-poly-bg {
+    background-image: url("/assets/grey-low-poly.png");
+}
+
 .icon {
     fill: var(--secondary-colour);
 }
@@ -65,14 +70,14 @@ html {
     background-color: var(--primary-colour);
     border: 2px var(--border);
     box-shadow: var(--box-shadow);
-    padding: 2rem;
+    padding: 1.5rem;
     font-family: var(--body-font);
 }
 
 /* Heading that appears within a box element */
 .box-heading {
     color: var(--secondary-colour);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 /* Any small icon-text combo */
@@ -120,7 +125,7 @@ html {
 /* #region SECTIONS */
 section {
     display: flex;
-    justify-content: flex-start;
+    justify-items: center;
     flex-direction: column;
     min-height: fit-content;
     position: relative;
@@ -190,7 +195,7 @@ section {
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    width: 80%;
+    width: 90%;
 }
 /* #endregion */
 
@@ -276,10 +281,6 @@ section {
 /* #endregion */
 
 /* #region HERO */
-#hero {
-    background-image: url("/assets/grey-low-poly.png");
-}
-
 .hero-container {
     display: flex;
     justify-content: center;
@@ -384,23 +385,14 @@ section {
 /* #endregion */
 
 /* #region SKILLS */
-#skills {
-    background-image: url("/assets/grey-low-poly.png");
-}
-
 .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     margin: 2rem;
-}
-
-.skills-container-row {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    width: 54%;
+    width: 50vw;
 }
 
 .skills-box {
@@ -409,48 +401,36 @@ section {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem;
-    min-width: 50%;
 }
 
 .skills-box-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-}
-
-.skills-box-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    min-width: 100%;
-}
-
-.skill {
-    margin: 0.6rem;
-    max-width: 25%;
-    min-width: 25%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 1rem;
 }
 /* #endregion */
 
 /* #region ABOUT */
 .about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    width: 50vw;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: stretch;
+    gap: 2rem;
     margin: 2rem;
 }
 
 .about-box {
+    grid-column: 1 / 3;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 51%;
     gap: 1.5rem;
-    margin: 1rem;
 }
 
 .about-pic {
@@ -469,60 +449,35 @@ section {
     flex-direction: column;
     justify-content: flex-start;
 }
-/* #endregion */
-
-/* #region EDUCATION */
-.education-box-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-    margin: 1rem;
-    width: 56%;
-}
 
 .education-box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 1rem;
-    max-width: 43%;
 }
 
 .education-box-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: start;
-    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     gap: 1rem;
 }
-
-.education {
-    max-width: 45%;
-}
-
 /* #endregion */
 
 /* #region CONTACT */
-#contact {
-    background-image: url("/assets/grey-low-poly.png");
-    background-size: auto;
-}
-
 .contact-container {
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin: 2rem;
+    width: 50vw;
 }
 
 .contact-box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 40%;
+    width: 50%;
     margin: 1rem;
     gap: 1rem;
 }
@@ -580,5 +535,53 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+}
+/* #endregion */
+
+/* #region PROJECT PAGES */
+.project-container {
+    width: 60vw;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.project-img img {
+    max-width: 100%;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+}
+
+.project-extras {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-tools {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.project-link {
+    display: flex;
+    justify-content: flex-end;
 }
 /* #endregion */

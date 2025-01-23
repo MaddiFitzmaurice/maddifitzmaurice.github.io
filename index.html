@@ -14,10 +14,11 @@
             <div class="logo">MADDI FITZMAURICE</div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="index.html#about" class="link">About</a></li>
+                    <li><a href="index.html" class="link">Home</a></li>
                     <li><a href="games.html" class="link">Games</a></li>
                     <li><a href="apps.html" class="link">Apps</a></li>
-                    <li><a href="index.html#hero" class="link">Resume</a></li>
+                    <li><a onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')" class="link">Resume</a></li>
+                    <li><a href="index.html#about" class="link">About</a></li>
                     <li><a href="index.html#contact" class="link">Contact</a></li>
                 </ul>
             </div>
@@ -31,22 +32,24 @@
                     <span></span>
                 </div>
                 <div class="menu-links">
-                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
                     <li><a href="games.html" onclick="toggleMenu()">Games</a></li>
                     <li><a href="apps.html" onclick="toggleMenu()">Apps</a></li>
-                    <li><a href="index.html#hero" onclick="toggleMenu()">Resume</a></li>
+                    <li><a onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')">Resume</a></li>
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
                 </div>
             </div>
             </nav>
         </header>
-        <section id="hero">
+        <section id="hero" class="low-poly-bg">
             <div class="hero-container">
                 <div class="box hero-box">
                     <h1 class="hero-title">MADDI FITZMAURICE</h1>
                     <p class="hero-subtitle">
                         Software developer with an interest in desktop applications, 
-                        <br>games development, and web applications</p>
+                        <br>games development, and web applications
+                    </p>
                     <div class="hero-socials-container">
                         <svg 
                             xmlns="http://www.w3.org/2000/svg"
@@ -180,115 +183,101 @@
                 </div>
             </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="low-poly-bg">
             <div class="section-title-container">
                 <h1 class="section-title">SKILLS</h1>
             </div>
             <div class="skills-container">
-                <div class="skills-container-row">
-                    <div class="box skills-box">
-                        <div class="box-heading">
-                            <h2>LANGUAGES</h2>
-                        </div>
-                        <div class="skills-box-content">
-                            <div class="skills-box-row">
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/csharp.svg">
-                                    <h3>C#</h3>
-                                    <p>Experienced</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/python.svg">
-                                    <h3>Python</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/cplusplus.svg">
-                                    <h3>C++</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                            </div>
-                            <div class="skills-box-row">
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/html5.svg">
-                                    <h3>HTML</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/css3.svg">
-                                    <h3>CSS</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="box skills-box">
+                    <div class="box-heading">
+                        <h2>LANGUAGES</h2>
                     </div>
-                    <div class="box skills-box">
-                        <div class="box-heading">
-                            <h2>APPS & DATA</h2>
+                    <div class="skills-box-content">
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/csharp.svg">
+                            <h3>C#</h3>
+                            <p>Experienced</p>
                         </div>
-                        <div class="skills-box-content">
-                            <div class="skills-box-row">
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/winforms.png">
-                                    <h3>Windows Forms .NET</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/django.svg">
-                                    <h3>Django</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                            </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/python.svg">
+                            <h3>Python</h3>
+                            <p>Some Experience</p>
+                        </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/cplusplus.svg">
+                            <h3>C++</h3>
+                            <p>Some Experience</p>
+                        </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/html5.svg">
+                            <h3>HTML</h3>
+                            <p>Some Experience</p>
+                        </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/css3.svg">
+                            <h3>CSS</h3>
+                            <p>Some Experience</p>
                         </div>
                     </div>
                 </div>
-                <div class="skills-container-row">
-                    <div class="box skills-box">
-                        <div class="box-heading">
-                            <h2>CI/CD TOOLS</h2>
+                <div class="box skills-box">
+                    <div class="box-heading">
+                        <h2>APPS & DATA</h2>
+                    </div>
+                    <div class="skills-box-content">
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/winforms.png">
+                            <h3>Windows Forms .NET</h3>
+                            <p>Some Experience</p>
                         </div>
-                        <div class="skills-box-content">
-                            <div class="skills-box-row">
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/github-logo.svg">
-                                    <h3>GitHub</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/docker-logo.svg">
-                                    <h3>Docker</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/jenkins.svg">
-                                    <h3>Jenkins</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                            </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/django.svg">
+                            <h3>Django</h3>
+                            <p>Some Experience</p>
                         </div>
                     </div>
-                    <div class="box skills-box">
-                        <div class="box-heading">
-                            <h2>GAME DEV</h2>
+                </div>
+                <div class="box skills-box">
+                    <div class="box-heading">
+                        <h2>CI/CD TOOLS</h2>
+                    </div>
+                    <div class="skills-box-content">
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/github-logo.svg">
+                            <h3>GitHub</h3>
+                            <p>Some Experience</p>
                         </div>
-                        <div class="skills-box-content">
-                            <div class="skills-box-row">
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/unity.svg">
-                                    <h3>Unity</h3>
-                                    <p>Experienced</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/ink.png">
-                                    <h3>Ink</h3>
-                                    <p>Experienced</p>
-                                </div>
-                                <div class="box-badge skill">
-                                    <img src="/assets/icons/audacity.svg">
-                                    <h3>Audacity</h3>
-                                    <p>Some Experience</p>
-                                </div>
-                            </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/docker-logo.svg">
+                            <h3>Docker</h3>
+                            <p>Some Experience</p>
+                        </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/jenkins.svg">
+                            <h3>Jenkins</h3>
+                            <p>Some Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box skills-box">
+                    <div class="box-heading">
+                        <h2>GAME DEV</h2>
+                    </div>
+                    <div class="skills-box-content">
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/unity.svg">
+                            <h3>Unity</h3>
+                            <p>Experienced</p>
+                        </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/ink.png">
+                            <h3>Ink</h3>
+                            <p>Experienced</p>
+                        </div>
+                        <div class="box-badge skill">
+                            <img src="/assets/icons/audacity.svg">
+                            <h3>Audacity</h3>
+                            <p>Some Experience</p>
                         </div>
                     </div>
                 </div>
@@ -327,65 +316,63 @@
                         </div>
                     </div>
                 </div>
-                <div class="education-box-container">
-                    <div class="box education-box">
-                        <div class="box-heading">
-                            <h2>EDUCATION</h2>
+                <div class="box education-box">
+                    <div class="box-heading">
+                        <h2>EDUCATION</h2>
+                    </div>
+                    <div class="education-box-content">
+                        <div class="box-badge education">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                class="icon"
+                                alt="computer icon"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                            </svg>
+                            <h3>Bachelor of Computer Science</h3>
+                            <p>Swinburne University</p>
                         </div>
-                        <div class="education-box-content">
-                            <div class="box-badge education">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    class="icon"
-                                    alt="computer icon"
-                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
-                                </svg>
-                                <h3>Bachelor of Computer Science</h3>
-                                <p>Swinburne University</p>
-                            </div>
-                            <div class="box-badge education">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    class="icon"
-                                    alt="media icon"
-                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 0L576 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64l-320 0c-35.3 0-64-28.7-64-64l0-224c0-35.3 28.7-64 64-64zM476 106.7C471.5 100 464 96 456 96s-15.5 4-20 10.7l-56 84L362.7 169c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l80 0 48 0 144 0c8.9 0 17-4.9 21.2-12.7s3.7-17.3-1.2-24.6l-96-144zM336 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM64 128l96 0 0 256 0 32c0 17.7 14.3 32 32 32l128 0c17.7 0 32-14.3 32-32l0-32 160 0 0 64c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192c0-35.3 28.7-64 64-64zm8 64c-8.8 0-16 7.2-16 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0zm0 104c-8.8 0-16 7.2-16 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0zm0 104c-8.8 0-16 7.2-16 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0zm336 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0c-8.8 0-16 7.2-16 16z"/>
-                                </svg>
-                                <h3>Bachelor of Media</h3>
-                                <p>University of New South Wales</p>
-                            </div>
+                        <div class="box-badge education">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                class="icon"
+                                alt="media icon"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 0L576 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64l-320 0c-35.3 0-64-28.7-64-64l0-224c0-35.3 28.7-64 64-64zM476 106.7C471.5 100 464 96 456 96s-15.5 4-20 10.7l-56 84L362.7 169c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l80 0 48 0 144 0c8.9 0 17-4.9 21.2-12.7s3.7-17.3-1.2-24.6l-96-144zM336 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM64 128l96 0 0 256 0 32c0 17.7 14.3 32 32 32l128 0c17.7 0 32-14.3 32-32l0-32 160 0 0 64c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192c0-35.3 28.7-64 64-64zm8 64c-8.8 0-16 7.2-16 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0zm0 104c-8.8 0-16 7.2-16 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0zm0 104c-8.8 0-16 7.2-16 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0zm336 16l0 16c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-16 0c-8.8 0-16 7.2-16 16z"/>
+                            </svg>
+                            <h3>Bachelor of Media</h3>
+                            <p>University of New South Wales</p>
                         </div>
                     </div>
-                    <div class="box education-box">
-                        <div class="box-heading">
-                            <h2>CERTIFICATES</h2>
+                </div>
+                <div class="box education-box">
+                    <div class="box-heading">
+                        <h2>CERTIFICATES</h2>
+                    </div>
+                    <div class="education-box-content">
+                        <div class="box-badge education">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                class="icon"
+                                alt="code icon"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+                            </svg>
+                            <h3>HarvardX</h3>
+                            <p>Introduction to Computer Science</p>
                         </div>
-                        <div class="education-box-content">
-                            <div class="box-badge education">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    class="icon"
-                                    alt="code icon"
-                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
-                                </svg>
-                                <h3>HarvardX</h3>
-                                <p>Introduction to Computer Science</p>
-                            </div>
-                            <div class="box-badge education">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    class="icon"
-                                    alt="gamepad icon"
-                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M192 64C86 64 0 150 0 256S86 448 192 448l256 0c106 0 192-86 192-192s-86-192-192-192L192 64zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24l0 32 32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0 0 32c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-32-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l32 0 0-32z"/>
-                                </svg>
-                                <h3>HarvardX</h3>
-                                <p>Introduction to Games Development</p>
-                            </div>
+                        <div class="box-badge education">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                class="icon"
+                                alt="gamepad icon"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M192 64C86 64 0 150 0 256S86 448 192 448l256 0c106 0 192-86 192-192s-86-192-192-192L192 64zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24l0 32 32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0 0 32c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-32-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l32 0 0-32z"/>
+                            </svg>
+                            <h3>HarvardX</h3>
+                            <p>Introduction to Games Development</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="low-poly-bg">
             <div class="section-title-container">
                 <h1 class="section-title">CONTACT ME</h1>
             </div>
