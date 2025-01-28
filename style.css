@@ -65,6 +65,10 @@ html {
     font-weight: bold;
 }
 
+iframe {
+    border: none;
+}
+
 /*  Key visual element for each section */
 .box {
     background-color: var(--primary-colour);
@@ -72,6 +76,10 @@ html {
     box-shadow: var(--box-shadow);
     padding: 1.5rem;
     font-family: var(--body-font);
+}
+
+.box ul {
+    padding-left: 1.5rem;
 }
 
 /* Heading that appears within a box element */
@@ -100,6 +108,7 @@ html {
 
 .box-badge svg {
     margin-bottom: 0.3rem;
+    flex-basis: 50%;
     max-width: 60px;
 }
 
@@ -538,7 +547,7 @@ footer {
 }
 /* #endregion */
 
-/* #region PROJECT PAGES */
+/* #region GAMES/APPS PAGES */
 .project-container {
     width: 60vw;
     align-self: center;
@@ -583,5 +592,117 @@ footer {
 .project-link {
     display: flex;
     justify-content: flex-end;
+}
+/* #endregion */
+
+/* #region PROJECT PAGE HERO */
+.project-hero-box {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.project-hero-vid {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.project-hero-vid iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.project-hero-details {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-hero-details h2 {
+    font-size: 2rem;
+}
+
+.project-hero-desc {
+    text-align: justify;
+}
+
+.hero-project-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+/* #endregion */
+
+/* #region PROJECT PAGE OVERVIEW */
+.project-overview-container {
+    width: 60vw;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.overview-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.overview-box-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+/* #endregion */
+
+/* #region PROJECT PAGE DUTIES */
+.project-duties-container {
+    margin: 2rem;
+    width: 50vw;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-duties-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-duties-image {
+    display: flex;
+    flex-basis: 42%;
+}
+
+.project-duties-image img {
+    max-width: 100%;
+}
+
+.project-duties-details {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+}
+/* #endregion */
+
+/* #region PROJECT PAGE BREAKDOWN */
+.project-breakdown-box {
+    display: flex;
+}
+
+.project-breakdown-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-breakdown-uml img {
+    width: 100%;
 }
 /* #endregion */
