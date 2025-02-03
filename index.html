@@ -5,41 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Maddi Fitzmaurice Portfolio</title>
         <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="mediaqueries.css"/>
         <link rel="icon" href="/assets/icons/browser-icon.png" type="image/x-icon">
     </head>
     <body>
         <header id="top-nav">
-            <nav id="desktop-nav">
-            <div class="logo">MADDI FITZMAURICE</div>
-            <div class="nav-links">
+            <div class="logo">
+                <a href="index.html">MADDI FITZMAURICE</a>
+            </div>
+            <nav id="top-nav-links">
                 <ul>
-                    <li><a href="index.html" class="link">Home</a></li>
-                    <li><a href="games.html" class="link">Games</a></li>
-                    <li><a href="apps.html" class="link">Apps</a></li>
-                    <li><a onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')" class="link">Resume</a></li>
-                    <li><a href="index.html#about" class="link">About</a></li>
-                    <li><a href="index.html#contact" class="link">Contact</a></li>
+                    <li><a href="index.html" class="link nav-link">Home</a></li>
+                    <li><a href="games.html" class="link nav-link">Games</a></li>
+                    <li><a href="apps.html" class="link nav-link">Apps</a></li>
+                    <li><a onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')" class="link nav-link">Resume</a></li>
+                    <li><a href="index.html#about" class="link nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="link nav-link">Contact</a></li>
                 </ul>
-            </div>
-            </nav>
-            <nav id="hamburger-nav">
-            <div class="logo">Maddi Fitzmaurice</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-                    <li><a href="games.html" onclick="toggleMenu()">Games</a></li>
-                    <li><a href="apps.html" onclick="toggleMenu()">Apps</a></li>
-                    <li><a onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')">Resume</a></li>
-                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
             </nav>
         </header>
         <section id="hero" class="low-poly-bg">
@@ -74,8 +55,8 @@
                         </svg>
                     </div>
                     <div class="hero-links-container">
-                        <a class="link" onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')">Download Resume</a>
-                        <a class="link" href="./index.html#contact">Contact Me</a>
+                        <a class="link box-link" onclick="window.open('./assets/MaddiFitzmaurice_Resume_2024.pdf')">Download Resume</a>
+                        <a class="link box-link" href="./index.html#contact">Contact Me</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +95,7 @@
                                 </div>
                             </div>
                             <div class="index-project-link">
-                                <a class="link" href="projects/bound-by-a-dying-star.html">View Project</a>
+                                <a class="link box-link" href="projects/bound-by-a-dying-star.html">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -148,7 +129,7 @@
                                 </div>
                             </div>
                             <div class="index-project-link">
-                                <a class="link" href="">View Project</a>
+                                <a class="link box-link" href="">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -173,10 +154,10 @@
                         </div>
                         <div class="index-project-portfolio-links">
                             <div class="index-portfolio-link">
-                                <a class="link" href="games.html">Games</a>
+                                <a class="link box-link" href="games.html">Games</a>
                             </div>
                             <div class="index-portfolio-link">
-                                <a class="link" href="apps.html">Apps</a>
+                                <a class="link box-link" href="apps.html">Apps</a>
                             </div>
                         </div>
                     </div>
@@ -390,10 +371,10 @@
                         </div>
                         <div class="contact-box-links">
                             <div class="contact-box-link">
-                                <a class="link" href="https://www.linkedin.com/in/maddifitzmaurice/">LinkedIn</a>
+                                <a class="link box-link" href="https://www.linkedin.com/in/maddifitzmaurice/">LinkedIn</a>
                             </div>
                             <div class="contact-box-link">
-                                <a class="link" href="mailto:maddi.fitzmaurice@gmail.com?subject=Portfolio Website Inquiry">Email</a>
+                                <a class="link box-link" href="mailto:maddi.fitzmaurice@gmail.com?subject=Portfolio Website Inquiry">Email</a>
                             </div>                            
                         </div>
                     </div>
@@ -411,10 +392,10 @@
                         </div>
                         <div class="contact-box-links">
                             <div class="contact-box-link">
-                                <a class="link" href="https://github.com/maddifitzmaurice/">GitHub</a>
+                                <a class="link box-link" href="https://github.com/maddifitzmaurice/">GitHub</a>
                             </div>
                             <div class="contact-box-link">
-                                <a class="link" href="https://madfizz.itch.io/">Itch.io</a>
+                                <a class="link box-link" href="https://madfizz.itch.io/">Itch.io</a>
                             </div>                            
                         </div>
                     </div>
@@ -458,7 +439,7 @@
             </svg>
         </div>
         <nav class="footer-nav">
-            <a class="link" href="#top-nav">Back To Top</a>
+            <a class="link nav-link" href="#top-nav">Back To Top</a>
         </nav>
     </footer>
 </html>

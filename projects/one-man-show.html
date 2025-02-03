@@ -5,40 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Maddi Fitzmaurice</title>
         <link rel="stylesheet" href="../style.css"/>
-        <link rel="stylesheet" href="../mediaqueries.css"/>
     </head>
     <body>
         <header id="top-nav">
-            <nav id="desktop-nav">
-            <div class="logo">MADDI FITZMAURICE</div>
-            <div class="nav-links">
+            <div class="logo">
+                <a href="index.html">MADDI FITZMAURICE</a>
+            </div>
+            <nav id="top-nav-links">
                 <ul>
-                    <li><a href="../index.html" class="link">Home</a></li>
-                    <li><a href="../games.html" class="link">Games</a></li>
-                    <li><a href="../apps.html" class="link">Apps</a></li>
-                    <li><a onclick="window.open('../assets/MaddiFitzmaurice_Resume_2024.pdf')" class="link">Resume</a></li>
-                    <li><a href="../index.html#about" class="link">About</a></li>
-                    <li><a href="../index.html#contact" class="link">Contact</a></li>
+                    <li><a href="../index.html" class="link nav-link">Home</a></li>
+                    <li><a href="../games.html" class="link nav-link">Games</a></li>
+                    <li><a href="../apps.html" class="link nav-link">Apps</a></li>
+                    <li><a onclick="window.open('../assets/MaddiFitzmaurice_Resume_2024.pdf')" class="link nav-link">Resume</a></li>
+                    <li><a href="../index.html#about" class="link nav-link">About</a></li>
+                    <li><a href="../index.html#contact" class="link nav-link">Contact</a></li>
                 </ul>
-            </div>
-            </nav>
-            <nav id="hamburger-nav">
-            <div class="logo">Maddi Fitzmaurice</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
-                    <li><a href="../games.html" onclick="toggleMenu()">Games</a></li>
-                    <li><a href="../apps.html" onclick="toggleMenu()">Apps</a></li>
-                    <li><a onclick="window.open('../assets/MaddiFitzmaurice_Resume_2024.pdf')">Resume</a></li>
-                    <li><a href="../index.html#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="../index.html#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
             </nav>
         </header>
         <section id="oms-hero" class="low-poly-bg">
@@ -59,8 +40,8 @@
                             </p>
                         </div>
                         <div class="hero-project-links">
-                            <a class="link" href="https://madfizz.itch.io/one-man-show">Play</a>
-                            <a class="link" href="https://github.com/MaddiFitzmaurice/One-Man-Show">Code</a>
+                            <a class="link box-link" href="https://madfizz.itch.io/one-man-show">Play</a>
+                            <a class="link box-link" href="https://github.com/MaddiFitzmaurice/One-Man-Show">Code</a>
                         </div>
                     </div>
                 </div>
@@ -323,7 +304,7 @@
             </svg>
         </div>
         <nav class="footer-nav">
-            <a class="link" href="#top-nav">Back To Top</a>
+            <a class="link nav-link" href="#top-nav">Back To Top</a>
         </nav>
     </footer>
 </html>
