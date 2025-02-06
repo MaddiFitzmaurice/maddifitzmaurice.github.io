@@ -299,7 +299,7 @@ section {
 }
 
 .index-projects-container::-webkit-scrollbar {
-    height: 0.8rem;
+    height: 1rem;
     width: 75%;
 }
 
@@ -324,19 +324,21 @@ section {
 
 .index-project-image {
     display: flex;
-    flex-basis: 42%;
+    flex-basis: 55%;
     flex-grow: 1;
 }
 
 .index-project-image img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-width: 350px;
     object-fit: contain;
 }
 
 .index-project-details {
     display: flex;
     flex-direction: column;
-    flex-basis: 55%;
+    flex-basis: 40%;
     flex-grow: 1;
 }
 
@@ -369,6 +371,14 @@ section {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+/* #endregion */
+
+/* #region INDEX PROJECT MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+    .index-project-image img {
+        min-width: auto;
+    }
 }
 /* #endregion */
 
