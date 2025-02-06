@@ -348,7 +348,6 @@ section {
 }
 
 .index-project-extra {
-    flex-grow: 1;
     display: flex;
     align-content: center;
     justify-content: space-between;
