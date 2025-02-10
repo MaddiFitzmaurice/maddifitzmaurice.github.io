@@ -73,6 +73,16 @@ html {
     cursor: pointer;
 }
 
+.no-link {
+    font-family: var(--body-font);
+    font-weight: 500;
+    color:var(--accent-colour);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: var(--accent-colour);
+}
+
 .link:hover {
     font-weight: bold;
 }
