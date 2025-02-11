@@ -642,17 +642,18 @@ footer {
     margin: 2rem;
 }
 
-.project-hero-vid {
+.project-hero-visual {
     flex-basis: 50%;
     display: flex;
     flex-grow: 1;
 }
 
-.project-hero-vid iframe {
+.project-hero-visual iframe, .project-hero-visual img {
     width: 100%;
     min-width: 400px;
     aspect-ratio: 16 / 9;
 }
+
 
 .project-hero-details {
     flex-basis: 45%;
@@ -680,7 +681,7 @@ footer {
 
 /* #region PROJECT PAGE HERO MEDIA QUERIES */
 @media screen and (max-width: 600px) {
-    .project-hero-vid iframe {
+    .project-hero-visual iframe, .project-hero-visual img {
         min-width: auto;
     }
 }
