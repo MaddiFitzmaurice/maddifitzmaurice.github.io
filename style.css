@@ -232,7 +232,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
     padding: 1rem 2rem 1rem 2rem;
     outline: 3px var(--border)
 }
@@ -242,7 +241,8 @@ section {
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem 2rem;
+    text-align: center;
 }
 /* #endregion */
 
