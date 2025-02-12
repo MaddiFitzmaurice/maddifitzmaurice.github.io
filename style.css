@@ -44,7 +44,7 @@ html {
 
 /* #region REPEATING THEMES */
 .low-poly-bg {
-    background-image: url("/assets/grey-low-poly.png");
+    background-image: url("assets/grey-low-poly.png");
     background-size: cover;
 }
 
@@ -206,7 +206,7 @@ section {
     flex-basis: 55%;
     align-items: center;
     justify-content: center;
-    background-image: url("/assets/blue-low-poly.png");
+    background-image: url("assets/blue-low-poly.png");
     background-size: cover;
     padding: 1rem 2rem 1rem 2rem;
     outline: 3px var(--border)
