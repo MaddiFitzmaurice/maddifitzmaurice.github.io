@@ -174,7 +174,7 @@ section {
 }
 
 .section-title-container {
-    background-image: url("/assets/blue-low-poly.png");
+    background-image: url("assets/blue-low-poly.png");
     background-size: cover;
     display: flex;
     justify-content: center;
