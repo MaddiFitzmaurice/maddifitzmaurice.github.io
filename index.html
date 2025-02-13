@@ -8,12 +8,8 @@
         <link rel="icon" href="/assets/icons/browser-icon.png" type="image/x-icon">
         <script>
             if (window.location.href.includes("index.html")) {
-                const index = window.location.href.indexOf("index.html");
                 
-                // Wait 5ms so any same page anchors can load
-                setTimeout(()=>{
-                    window.location.href = window.location.href.slice(0, index);
-                }, 5);
+                var url = window.location.href.replace(/#.*/, "");
 
                 // window.location.href = window.location.href.replace("index.html", "");
             }
