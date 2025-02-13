@@ -7,14 +7,17 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="icon" href="/assets/icons/browser-icon.png" type="image/x-icon">
         <script>
-            if (window.location.href.includes("index.html")) {
+           
                 
-                setTimeout(()=>{
-                    history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
-                }, 5); 
+            window.addEventListener('load', () => {
+                window.history.pushState('','','/',('#'),[0]);
+            }); 
 
+            window.addEventListener('hashchange', () => {
+            window.history.pushState('','','/',('#'),[0]);
+                
+            });
                 // window.location.href = window.location.href.replace("index.html", "");
-            }
             // else if (window.location.href.includes("index.html#top-nav"))
             // {
             //     window.location.href = window.location.href.replace("index.html#top-nav", "");
