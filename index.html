@@ -8,23 +8,23 @@
         <link rel="icon" href="/assets/icons/browser-icon.png" type="image/x-icon">
         <script>
             if (window.location.href.includes("index.html")) {
-                const index = window.location.href.indexOf("index.html");
-                window.location.href = window.location.href.slice(0, index);
+                // const index = window.location.href.indexOf("index.html");
+                // window.location.href = window.location.href.slice(0, index);
 
-                // window.location.href = window.location.href.replace("index.html", "");
+                window.location.href = window.location.href.replace("index.html", "");
             }
-            // else if (window.location.href.includes("index.html#top-nav"))
-            // {
-            //     window.location.href = window.location.href.replace("index.html#top-nav", "");
-            // }
-            // else if (window.location.href.includes("index.html#contact"))
-            // {
-            //     window.location.href = window.location.href.replace("index.html#contact", "");
-            // }
-            // else if (window.location.href.includes("index.html#about"))
-            // {
-            //     window.location.href = window.location.href.replace("index.html#about", "");
-            // }
+            else if (window.location.href.includes("index.html#top-nav"))
+            {
+                window.location.href = window.location.href.replace("index.html#top-nav", "");
+            }
+            else if (window.location.href.includes("index.html#contact"))
+            {
+                window.location.href = window.location.href.replace("index.html#contact", "contact");
+            }
+            else if (window.location.href.includes("index.html#about"))
+            {
+                window.location.href = window.location.href.replace("index.html#about", "about");
+            }
         </script>
     </head>
     <body>
