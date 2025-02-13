@@ -7,22 +7,11 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="icon" href="/assets/icons/browser-icon.png" type="image/x-icon">
         <script>
-            document.addEventListener('DOMContentLoaded', () => {
+            
+            function anchor(elementName) {
+                document.getElementById(elementName).scrollIntoView(true);
+            }
 
-                const anchors = document.getElementsByClassName("anchor-link");
-
-                anchors.foreach((anchor) => {
-                    anchor.addEventListener('click', () => {
-                        setTimeout(() => {
-                            history.replaceState(
-                                null,
-                                document.title,
-                                `${window.location.origin}${window.location.pathname}${window.location.search}`
-                            );
-                        }, 5);
-                    });
-                })
-            });
         </script>
     </head>
     <body>
@@ -35,9 +24,9 @@
                     <li><a href="index.html" class="link nav-link">Home</a></li>
                     <li><a href="games.html" class="link nav-link">Games</a></li>
                     <li><a href="apps.html" class="link nav-link">Apps</a></li>
-                    <li><a href="index.html#about" class="link nav-link anchor-link">About</a></li>
+                    <li><p onclick="anchor('#about')" class="link nav-link">About</p></li>
                     <li><a href="assets/docs/MaddiFitzmaurice_SoftwareEngineer_Resume_2025.pdf" target="_blank" class="link nav-link">Resume</a></li>
-                    <li><a href="index.html#contact" class="link nav-link anchor-link">Contact</a></li>
+                    <li><a href="index.html#contact" class="link nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -74,7 +63,7 @@
                     </div>
                     <div class="hero-links-container">
                         <a class="link box-link" href="assets/docs/MaddiFitzmaurice_SoftwareEngineer_Resume_2025.pdf" target="_blank">See Resume</a>
-                        <a class="link box-link anchor-link" href="index.html#contact">Contact Me</a>
+                        <a class="link box-link" href="index.html#contact">Contact Me</a>
                     </div>
                 </div>
             </div>
