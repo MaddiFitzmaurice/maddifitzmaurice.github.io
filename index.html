@@ -9,7 +9,9 @@
         <script>
             if (window.location.href.includes("index.html")) {
                 
-                var url = window.location.href.replace(/#.*/, "");
+                setTimeout(()=>{
+                    history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+                }, 5); 
 
                 // window.location.href = window.location.href.replace("index.html", "");
             }
