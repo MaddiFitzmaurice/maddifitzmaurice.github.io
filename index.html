@@ -8,15 +8,13 @@
         <link rel="icon" href="/assets/icons/browser-icon.png" type="image/x-icon">
         <script>
            
-                
-            window.addEventListener('load', () => {
-                window.history.pushState('','','/',('#'),[0]);
-            }); 
-
-            window.addEventListener('hashchange', () => {
-            window.history.pushState('','','/',('#'),[0]);
-                
-            });
+            if (window.location.href.includes(".html"))
+            {
+                var url = window.location.href;
+                url = url.split('.html')[0];
+                //url = url.substring(0, url.lastIndexOf("."));
+                window.history.replaceState( null, null, url );
+            }
                 // window.location.href = window.location.href.replace("index.html", "");
             // else if (window.location.href.includes("index.html#top-nav"))
             // {
