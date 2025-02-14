@@ -1,7 +1,11 @@
 
 if (window.location.href.includes(".html")) {
-    // window.location.href = window.location.href.replace("index.html", "");
-    window.location.href = window.location.href.replace(".html", "");
+    const index = window.location.href.indexOf(".html");
+  
+    // Wait 5ms so any same page anchors can load
+    setTimeout(()=>{
+        window.location.href = window.location.href.slice(0, index);
+    }, 5);
 }
 
 
