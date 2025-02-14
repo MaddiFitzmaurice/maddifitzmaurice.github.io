@@ -5,12 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Maddi Fitzmaurice Portfolio</title>
         <link rel="stylesheet" href="style.css"/>
-        <link rel="icon" href="/assets/icons/browser-icon.png" type="image/x-icon">
-        <script>
-            function anchor(elementName) {
-                document.getElementById(elementName).scrollIntoView();
-            }
-        </script>
+        <link rel="icon" href="assets/icons/browser-icon.png" type="image/x-icon">
+        <script src="script.js"></script>
     </head>
     <body>
         <header id="top-nav">
@@ -24,7 +20,7 @@
                     <li><a href="apps.html" class="link nav-link">Apps</a></li>
                     <li><p onclick="anchor('about')" class="link nav-link">About</p></li>
                     <li><a href="assets/docs/MaddiFitzmaurice_SoftwareEngineer_Resume_2025.pdf" target="_blank" class="link nav-link">Resume</a></li>
-                    <li><p onclick="anchor('contact')" class="link nav-link">Contact</p></li>
+                    <li><a href="mailto:maddi.fitzmaurice@gmail.com?subject=Portfolio Website Inquiry" class="link nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -61,7 +57,7 @@
                     </div>
                     <div class="hero-links-container">
                         <a class="link box-link" href="assets/docs/MaddiFitzmaurice_SoftwareEngineer_Resume_2025.pdf" target="_blank">See Resume</a>
-                        <p onclick="anchor('contact')" class="link box-link" href="index.html#contact">Contact Me</p>
+                        <a a href="mailto:maddi.fitzmaurice@gmail.com?subject=Portfolio Website Inquiry" class="link box-link" href="index.html#contact">Contact Me</a>
                     </div>
                 </div>
             </div>
@@ -357,54 +353,6 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="low-poly-bg">
-            <div class="section-title-container">
-                <h1 class="section-title">CONTACT ME</h1>
-            </div>
-            <div class="contact-container">
-                <div class="box contact-box">
-                    <div class="box-heading">
-                        <h2>LOOKING FOR WORK</h2>
-                    </div>
-                    <div class="contact-box-details">
-                        <div class="contact-box-content">
-                            <p>
-                                I’ve recently graduated and am currently open to full-time work! 
-                                You can reach out to me via LinkedIn or Email below.
-                            </p>
-                        </div>
-                        <div class="contact-box-links">
-                            <div class="contact-box-link">
-                                <a class="link box-link" href="https://www.linkedin.com/in/maddifitzmaurice/">LinkedIn</a>
-                            </div>
-                            <div class="contact-box-link">
-                                <a class="link box-link" href="mailto:maddi.fitzmaurice@gmail.com?subject=Portfolio Website Inquiry">Email</a>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="box contact-box">
-                    <div class="box-heading">
-                        <h2>FOLLOW ME</h2>
-                    </div>
-                    <div class="contact-box-details">
-                        <div class="contact-box-content">
-                            <p>
-                                You can also follow my work and see what I get up to with the 
-                                links below.
-                            </p>
-                        </div>
-                        <div class="contact-box-links">
-                            <div class="contact-box-link">
-                                <a class="link box-link" href="https://github.com/maddifitzmaurice/">GitHub</a>
-                            </div>
-                            <div class="contact-box-link">
-                                <a class="link box-link" href="https://madfizz.itch.io/">Itch.io</a>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-        </section>
     </body>
     <footer>
         <div class="copyright">
@@ -443,7 +391,7 @@
             </svg>
         </div>
         <nav class="footer-nav">
-            <a class="link nav-link" href="index.html#top-nav">Back To Top</a>
+            <p class="link nav-link" p onclick="anchor('top-nav')">Back To Top</p>
         </nav>
     </footer>
 </html>

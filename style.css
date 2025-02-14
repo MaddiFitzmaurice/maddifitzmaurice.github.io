@@ -498,39 +498,6 @@ section {
 }
 /* #endregion */
 
-/* #region CONTACT */
-.contact-container {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 2rem;
-    width: clamp(324px, 70%, 600px);
-}
-
-.contact-box {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.contact-box-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-grow: 3;
-}
-
-.contact-box-links {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 1rem;
-    flex-grow: 1;
-}
-/* #endregion */
-
 /* #region FOOTER */
 footer {
     background-color: var(--primary-colour);
