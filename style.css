@@ -472,13 +472,10 @@ footer {
 /* #region ABOUT */
 .about-container {
     align-self: center;
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, auto);
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    margin: 2rem;
+    margin: 3rem;
     width: clamp(300px, 70%, 1000px);
 }
 
@@ -514,7 +511,22 @@ footer {
     width: 100%;
 }
 
+/* #endregion */
+
+/* #region EDUCATION */
+.education-container {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+    width: clamp(300px, 70%, 600px);
+}
+
 .education-box {
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -528,10 +540,6 @@ footer {
 
 /* #region ABOUT MEDIA QUERIES */
 @media screen and (max-width: 1000px) {
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
     .about-box {
         grid-column: 1 / 2;
         flex-direction: column;
