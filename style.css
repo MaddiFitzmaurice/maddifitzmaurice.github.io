@@ -421,7 +421,9 @@ footer {
 .index-project-portfolio-links {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     width: 100%;
+    margin-top: 1.2rem;
 }
 /* #endregion */
 
