@@ -163,6 +163,10 @@ iframe {
     text-wrap: wrap;
     padding: 0.2rem 0.5rem;
 }
+
+.clickable-img:hover {
+    cursor: pointer;
+}
 /* #endregion */
 
 /* #region SECTIONS */
